@@ -4,7 +4,7 @@ from flask import Blueprint
 from flask_restplus import Api
 from .news import namespace as news_ns
 
-blueprint = Blueprint('documented_api', __name__, url_prefix='/documented_api')
+blueprint = Blueprint('documented_api', __name__, url_prefix='')
 
 api_extension = Api(
     blueprint,
